@@ -1,46 +1,31 @@
-let btn = document.getElementById("loginbtn")
-let userInput = document.getElementById("username")
-let passInput = document.getElementById("password")
+const API_URL = 'http://127.0.0.1:8000/api/v1/paquetes/paraEntregar/detalle/';
 
-btn.addEventListener("click",function(){
-    
-    const data = {
-        username: userInput.value,
-        password: passInput.value
-    };
 
-    const requestOptions = {
+let btn = document.getElementById('btn-rastreo') 
+let idRastreo = document.getElementById('codigo')
 
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json' 
-         },
-        body: JSON.stringify(data)
+btn.addEventListener("click", function(e){
 
-    }
+    e.preventDefault();
+    let paqueteId = idRastreo.value 
 
-    const URL_OBTENER_ID_USUARIO = "http://127.0.0.1:8000/api/v2/usuario/validar/"
+    fetch(API_URL+paqueteId)
 
-    fetch(URL_OBTENER_ID_USUARIO)
+    .then(response => {
+        if (!response.ok) {
+        throw new Error('La solicitud no se pudo completar.');
+        }
+        return response.json();
+    })
 
-    .then(response => response.json())
-    .then(data =>{
+    .then(data => {   
+        console.log(data);
+        localStorage.setItem("paquete", JSON.stringify(data))
+    })
 
-        console.log(data)
+    .catch(error => {
+        console.error('Error al consultar la API:', error);
+    });
 
-    }) 
-
-    const URL = "http://127.0.0.1:8000/api/v2/usuario/getRoles/13"
-
-    fetch(URL)
-
-    .then(response => response.json())
-    .then(data =>{
-        console.log(data)
-    }) 
 
 })
-
-
-
-
