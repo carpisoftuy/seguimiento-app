@@ -41,12 +41,11 @@
 
     <section>
         <div class="container-form">
-            <form action="#" method="POST">
-                <p>Nombre</p><input class="form-control" type="text" required>
-                <p>Email</p><input class="form-control" type="email" required>
-                <p>Telefono</p><input class="form-control" type="number" required>
-                <p>Mensaje</p><textarea class="form-control text-area" type="text" required></textarea>
-                <button class="btn-enviar">Enviar</button>
+            <form action="https://formspree.io/f/xjvqjbzg" method="POST">
+                <p>Nombre</p><input class="form-control" name="nombre" type="text" required>
+                <p>Email</p><input class="form-control" name="email" type="email" required>
+                <p>Mensaje</p><textarea class="form-control text-area" name="mensaje" type="text" required></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </div>
     </section>
