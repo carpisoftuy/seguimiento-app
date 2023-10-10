@@ -24,6 +24,7 @@ h3{
 
 h6{
     color: var(--color-fuente);
+    text-decoration: underline;
 }
 
 body{

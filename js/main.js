@@ -21,6 +21,7 @@ btn.addEventListener("click", function(e){
     .then(data => {   
         console.log(data);
         localStorage.setItem("paquete", JSON.stringify(data))
+        window.location.href = "./seguimiento.html"
     })
 
     .catch(error => {
