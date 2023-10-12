@@ -291,6 +291,19 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+#idioma{
+  background-color: var(--background-ham);
+  color: var(--color-fuente);
+}
+
+.dropdown-menu{
+  background-color: #3c2d43;
+}
+
+.dropdown-menu li a:hover::after{
+  width: 0;
+}
+
 
 @media only screen and (min-width:0px) and (max-width:425px){
 
