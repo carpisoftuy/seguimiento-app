@@ -14,6 +14,8 @@ let txtDetalles = document.getElementById("detalles")
 let txtDireccion2 = document.getElementById("direccion-txt")
 let txtPeso2 = document.getElementById("peso-txt")
 let txtNroSeguimiento = document.getElementById("nro-seguimiento-txt")
+let txtConductor = document.getElementById("conductor")
+let txtConductorValue = document.getElementById("conductor-value")
 
 
 
@@ -33,6 +35,7 @@ function traducirAIngles(){
     txtDireccion2.innerHTML = "Address"
     txtPeso2.innerHTML = "Weight"
     txtNroSeguimiento.innerHTML = "tracking number"
+    txtConductor.innerHTML = "Driver"
 
 }
 
@@ -51,6 +54,7 @@ function traducirAEspanol(){
     txtDireccion2.innerHTML = "Direccion"
     txtPeso2.innerHTML = "Peso"
     txtNroSeguimiento.innerHTML = "Número de seguimiento"
+    txtConductor.innerHTML = "Conductor"
 
 }
 
