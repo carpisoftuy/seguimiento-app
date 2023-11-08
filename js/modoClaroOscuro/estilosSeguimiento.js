@@ -7,6 +7,7 @@ const BODY = document.querySelectorAll("body");
 const H3 = document.querySelectorAll("h3");
 const H1 = document.querySelectorAll("h1");
 const H6 = document.querySelectorAll("h6");
+const H4 = document.querySelectorAll("h4");
 const FOOTER = document.getElementById("footer");
 const LI = document.querySelectorAll("li");
 const HAMBURGUESA = document.getElementById("hamburguesa");
@@ -42,6 +43,10 @@ function estilosTemaClaro(){
 
     H3.forEach(h=>{
         h.style.color = colorBody;
+    })
+
+    H4.forEach(h=>{
+        h.style.color = colorFuenteTemaClaro;
     })
 
     H6.forEach(h=>{
@@ -88,6 +93,10 @@ function estilosTemaOscuro(){
     })
 
     H3.forEach(h=>{
+        h.style.color = "var(--color-fuente)";
+    })
+
+    H4.forEach(h=>{
         h.style.color = "var(--color-fuente)";
     })
 

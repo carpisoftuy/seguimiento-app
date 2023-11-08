@@ -15,7 +15,6 @@ let txtDireccion2 = document.getElementById("direccion-txt")
 let txtPeso2 = document.getElementById("peso-txt")
 let txtNroSeguimiento = document.getElementById("nro-seguimiento-txt")
 let txtConductor = document.getElementById("conductor")
-let txtConductorValue = document.getElementById("conductor-value")
 
 
 

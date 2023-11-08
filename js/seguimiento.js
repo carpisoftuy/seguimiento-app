@@ -10,13 +10,16 @@ let peso = data.peso
 let numero_seguimiento = data.id
 let conductorNombre = data.nombre
 let conductorApellido = data.apellido
+let matricula = data.matricula
 
-let txtDireccion = document.getElementById('direccion')
-let txtPeso = document.getElementById('peso')
+let txtDireccion = document.getElementById('direccion-txt')
+let txtPeso = document.getElementById('peso-txt')
 let txtNumeroSeguimiento = document.getElementById('nro-seguimiento')
-let txtConductor = document.getElementById('conductor-value')
+let txtConductor = document.getElementById('conductor')
+let txtCamion = document.getElementById("camion")
 
-txtDireccion.innerHTML = direccion
-txtPeso.innerHTML = peso + " KG"
+txtDireccion.innerHTML +=  " " + direccion
+txtPeso.innerHTML += ": " + peso + " KG"
 txtNumeroSeguimiento.innerHTML = numero_seguimiento
-txtConductor.innerHTML = conductorNombre + " " + conductorApellido
+txtConductor.innerHTML += ": " + conductorNombre + " " + conductorApellido
+txtCamion.innerHTML += ": "  + matricula
