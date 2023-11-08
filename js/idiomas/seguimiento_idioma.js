@@ -14,7 +14,6 @@ let txtDetalles = document.getElementById("detalles")
 let txtDireccion2 = document.getElementById("direccion-txt")
 let txtPeso2 = document.getElementById("peso-txt")
 let txtNroSeguimiento = document.getElementById("nro-seguimiento-txt")
-let txtConductor = document.getElementById("conductor")
 
 
 
@@ -31,10 +30,11 @@ function traducirAIngles(){
 
     txtEstado.innerHTML = "Order status"
     txtDetalles.innerHTML = "Order details"
-    txtDireccion2.innerHTML = "Address"
-    txtPeso2.innerHTML = "Weight"
-    txtNroSeguimiento.innerHTML = "tracking number"
-    txtConductor.innerHTML = "Driver"
+    txtDireccion2.innerHTML = "Address: " + direccion
+    txtPeso2.innerHTML = "Weight: " + peso + "KG" 
+    txtNroSeguimiento.innerHTML = "Tracking number" 
+    txtConductor.innerHTML = "Driver: " + conductorNombre + " " + conductorApellido
+    txtCamion.innerHTML = "Truck: " + matricula
 
 }
 
@@ -47,13 +47,15 @@ function traducirAEspanol(){
     txtIdioma.innerHTML = "Idioma"
     txtTema.innerHTML = "Tema"
     txtContactenos.innerHTML = "Contactenos"
+    
 
     txtEstado.innerHTML = "Estado del pedido"
     txtDetalles.innerHTML = "Detalles del envío"
-    txtDireccion2.innerHTML = "Direccion"
-    txtPeso2.innerHTML = "Peso"
+    txtDireccion2.innerHTML = "Direccion: " + direccion
+    txtPeso2.innerHTML = "Peso: " + peso + "KG"
     txtNroSeguimiento.innerHTML = "Número de seguimiento"
-    txtConductor.innerHTML = "Conductor"
+    txtConductor.innerHTML = "Conductor: " + conductorNombre + " " + conductorApellido
+    txtCamion.innerHTML = "Camión: " + matricula
 
 }
 
