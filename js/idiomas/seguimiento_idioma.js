@@ -29,8 +29,9 @@ function traducirAIngles(){
     txtContactenos.innerHTML = "Contact us"
 
     txtEstado.innerHTML = "Order status"
-    txtDetalles.innerHTML = "Order details"
+    txtDetalles.innerHTML = "Package details"
     txtDireccion2.innerHTML = "Address: " + direccion
+    txtDireccionAlmacen.innerHTML = "Address: " + direccion_almacen
     txtPeso2.innerHTML = "Weight: " + peso + "KG" 
     txtNroSeguimiento.innerHTML = "Tracking number" 
     txtConductor.innerHTML = "Driver: " + conductorNombre + " " + conductorApellido
@@ -50,7 +51,7 @@ function traducirAEspanol(){
     
 
     txtEstado.innerHTML = "Estado del pedido"
-    txtDetalles.innerHTML = "Detalles del envío"
+    txtDetalles.innerHTML = "Detalles del paquete"
     txtDireccion2.innerHTML = "Direccion: " + direccion
     txtPeso2.innerHTML = "Peso: " + peso + "KG"
     txtNroSeguimiento.innerHTML = "Número de seguimiento"
