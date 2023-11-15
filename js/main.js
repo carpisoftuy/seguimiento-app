@@ -1,4 +1,5 @@
-const API_URL = 'http://127.0.0.1:8001/api/v1/paquetes/paraEntregar/detalle/';
+const URL = "127.0.0.1:8002"
+const API_URL = 'http://'+URL+'/api/v1/paquetes/paraEntregar/detalle/';
 
 
 let btn = document.getElementById('btn-rastreo') 
